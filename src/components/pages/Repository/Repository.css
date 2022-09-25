@@ -1,0 +1,392 @@
+.Repository {
+    border: solid 0.1vw black;
+    padding: 10px;
+    width: 25vw;
+    margin: 10px 0px 10px 0px;
+    border: solid 2px darkgoldenrod;
+    background-color: rgb(201, 174, 108);
+    border-radius: 2%;
+}
+
+.Repository__name {
+    width: fit-content;
+    margin: 10px auto 10px auto;
+    font-size: 2vw;
+    background-color: rgb(201, 174, 108);
+    font-weight: bold;
+}
+
+.Repository__id{
+    color:rgb(80, 80, 80);
+    font-weight: normal;
+}
+
+.Repository__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(201, 174, 108);
+}
+
+.Repository__accessButton2 {
+    cursor: pointer;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    padding: 2px;
+    background-color: darkgreen;
+    color: aliceblue;
+}
+
+.Repository__accessButton {
+    cursor: pointer;
+    font-weight: bold;
+    height: 100%;
+    width: 100px;
+    background-color: darkgreen;
+    color: aliceblue;
+}
+
+.Repository__addButton {
+    cursor: pointer;
+    font-weight: bold;
+    width: 100px;
+    font-size: 20px;
+    padding: 2px;
+    background-color: darkgreen;
+    color: aliceblue;
+}
+
+.Repository__accessButton2:hover {
+    background-color: rgb(0, 0, 255);
+}
+
+.Repository__addButton:hover {
+    background-color: rgb(139, 0, 238);
+}
+
+@media(max-width: 1139px) {
+    .Repository {
+        border: solid 0.1vw black;
+        padding: 10px;
+        width: 25vw;
+        margin: 10px 0px 10px 0px;
+        border: solid 2px darkgoldenrod;
+        background-color: rgb(201, 174, 108);
+        border-radius: 2%;
+    }
+
+    .Repository__name {
+        width: fit-content;
+        margin: 10px auto 10px auto;
+        font-size: 2vw;
+        background-color: rgb(201, 174, 108);
+        font-weight: bold;
+    }
+
+    .Repository__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background-color: rgb(201, 174, 108);
+    }
+
+    .Repository__accessButton2 {
+        cursor: pointer;
+        font-weight: bold;
+        height: 100%;
+        width: 100%;
+        font-size: 20px;
+        padding: 2px;
+        background-color: darkgreen;
+        color: aliceblue;
+    }
+
+    .Repository__accessButton {
+        cursor: pointer;
+        font-weight: bold;
+        height: 100%;
+        width: 100px;
+        background-color: darkgreen;
+        color: aliceblue;
+    }
+
+    .Repository__addButton {
+        cursor: pointer;
+        font-weight: bold;
+        width: 100px;
+        font-size: 20px;
+        padding: 2px;
+        background-color: darkgreen;
+        color: aliceblue;
+    }
+
+    .Repository__accessButton2:hover {
+        background-color: rgb(0, 0, 255);
+    }
+
+    .Repository__addButton:hover {
+        background-color: rgb(139, 0, 238);
+    }
+}
+
+@media(max-width: 889px) {
+    .Repository {
+        border: solid 0.6vw black;
+        padding: 10px;
+        width: 25.5vw;
+        margin: 10px 0px 10px 0px;
+        border: solid 2px darkgoldenrod;
+        background-color: rgb(201, 174, 108);
+        border-radius: 2%;
+    }
+
+    .Repository__name {
+        width: fit-content;
+        margin: 10px auto 10px auto;
+        font-size: 2.5vw;
+        background-color: rgb(201, 174, 108);
+        font-weight: bold;
+    }
+
+    .Repository__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background-color: rgb(201, 174, 108);
+    }
+
+    .Repository__accessButton2 {
+        cursor: pointer;
+        font-weight: bold;
+        height: 100%;
+        width: 100%;
+        font-size: 20px;
+        padding: 2px;
+        background-color: darkgreen;
+        color: aliceblue;
+    }
+
+    .Repository__accessButton {
+        cursor: pointer;
+        font-weight: bold;
+        height: 100%;
+        width: 100px;
+        background-color: darkgreen;
+        color: aliceblue;
+    }
+
+    .Repository__addButton {
+        cursor: pointer;
+        font-weight: bold;
+        width: 100px;
+        font-size: 20px;
+        padding: 2px;
+        background-color: darkgreen;
+        color: aliceblue;
+    }
+
+    .Repository__accessButton2:hover {
+        background-color: rgb(0, 0, 255);
+    }
+
+    .Repository__addButton:hover {
+        background-color: rgb(139, 0, 238);
+    }
+}
+
+@media(max-width: 639px) {
+    .Repository {
+        border: solid 1.1vw black;
+        padding: 10px;
+        width: 40vw;
+        margin: 10px 0px 10px 0px;
+        border: solid 2px darkgoldenrod;
+        background-color: rgb(201, 174, 108);
+        border-radius: 2%;
+    }
+
+    .Repository__name {
+        width: fit-content;
+        margin: 10px auto 10px auto;
+        font-size: 4vw;
+        background-color: rgb(201, 174, 108);
+        font-weight: bold;
+    }
+
+    .Repository__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background-color: rgb(201, 174, 108);
+    }
+
+    .Repository__accessButton2 {
+        cursor: pointer;
+        font-weight: bold;
+        height: 100%;
+        width: 100%;
+        font-size: 20px;
+        padding: 2px;
+        background-color: darkgreen;
+        color: aliceblue;
+    }
+
+    .Repository__accessButton {
+        cursor: pointer;
+        font-weight: bold;
+        height: 100%;
+        width: 100px;
+        background-color: darkgreen;
+        color: aliceblue;
+    }
+
+    .Repository__addButton {
+        cursor: pointer;
+        font-weight: bold;
+        width: 100px;
+        font-size: 20px;
+        padding: 2px;
+        background-color: darkgreen;
+        color: aliceblue;
+    }
+
+    .Repository__accessButton2:hover {
+        background-color: rgb(0, 0, 255);
+    }
+
+    .Repository__addButton:hover {
+        background-color: rgb(139, 0, 238);
+    }
+}
+
+@media(max-width: 389px) {
+    .Repository {
+        border: solid 1.6vw black;
+        padding: 10px;
+        width: 42vw;
+        margin: 10px 0px 10px 0px;
+        border: solid 2px darkgoldenrod;
+        background-color: rgb(201, 174, 108);
+        border-radius: 2%;
+    }
+
+    .Repository__name {
+        width: fit-content;
+        margin: 10px auto 10px auto;
+        font-size: 5vw;
+        background-color: rgb(201, 174, 108);
+        font-weight: bold;
+    }
+
+    .Repository__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background-color: rgb(201, 174, 108);
+    }
+
+    .Repository__accessButton2 {
+        cursor: pointer;
+        font-weight: bold;
+        height: 100%;
+        width: 100%;
+        font-size: 20px;
+        padding: 2px;
+        background-color: darkgreen;
+        color: aliceblue;
+    }
+
+    .Repository__accessButton {
+        cursor: pointer;
+        font-weight: bold;
+        height: 100%;
+        width: 100px;
+        background-color: darkgreen;
+        color: aliceblue;
+    }
+
+    .Repository__addButton {
+        cursor: pointer;
+        font-weight: bold;
+        width: 100px;
+        font-size: 20px;
+        padding: 2px;
+        background-color: darkgreen;
+        color: aliceblue;
+    }
+
+    .Repository__accessButton2:hover {
+        background-color: rgb(0, 0, 255);
+    }
+
+    .Repository__addButton:hover {
+        background-color: rgb(139, 0, 238);
+    }
+}
+
+@media(max-width: 139px) {
+    .Repository {
+        border: solid 2.1vw black;
+        padding: 10px;
+        width: 42vw;
+        margin: 10px 0px 10px 0px;
+        border: solid 2px darkgoldenrod;
+        background-color: rgb(201, 174, 108);
+        border-radius: 2%;
+    }
+
+    .Repository__name {
+        width: fit-content;
+        margin: 10px auto 10px auto;
+        font-size: 5.5vw;
+        background-color: rgb(201, 174, 108);
+        font-weight: bold;
+    }
+
+    .Repository__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background-color: rgb(201, 174, 108);
+    }
+
+    .Repository__accessButton2 {
+        cursor: pointer;
+        font-weight: bold;
+        height: 100%;
+        width: 100%;
+        font-size: 20px;
+        padding: 2px;
+        background-color: darkgreen;
+        color: aliceblue;
+    }
+
+    .Repository__accessButton {
+        cursor: pointer;
+        font-weight: bold;
+        height: 100%;
+        width: 100px;
+        background-color: darkgreen;
+        color: aliceblue;
+    }
+
+    .Repository__addButton {
+        cursor: pointer;
+        font-weight: bold;
+        width: 100px;
+        font-size: 20px;
+        padding: 2px;
+        background-color: darkgreen;
+        color: aliceblue;
+    }
+
+    .Repository__accessButton2:hover {
+        background-color: rgb(0, 0, 255);
+    }
+
+    .Repository__addButton:hover {
+        background-color: rgb(139, 0, 238);
+    }
+}
