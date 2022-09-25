@@ -1,0 +1,34 @@
+{
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.4"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.1.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0"
+  },
+  "description": "Repository management service for Github repositories.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DouglasVolcato/github-repository-management-frontend-v2.0.git"
+  },
+  "keywords": [],
+  "author": "Douglas Volcato",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DouglasVolcato/github-repository-management-frontend-v2.0/issues"
+  },
+  "homepage": "https://github.com/DouglasVolcato/github-repository-management-frontend-v2.0#readme"
+}
