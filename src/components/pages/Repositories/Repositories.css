@@ -1,0 +1,250 @@
+.Repositories {
+    width: fit-content;
+    margin: 10px auto 10px auto;
+}
+
+.Repositories__form {
+    width: fit-content;
+    margin: 10px auto 10px auto;
+}
+
+.Repositories__form--input {
+    font-size: 1.8vw;
+}
+
+.Repositories__form--button {
+    margin: 10px;
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding: 2px;
+    background-color: rgb(0, 116, 44);
+    color: rgb(242, 245, 230);
+}
+
+.Repositories__form--button:hover {
+    background-color: rgb(0, 21, 116);
+    cursor: pointer;
+}
+
+.Repositories__repositoryList {
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+@media(max-width: 1139px) {
+    .Repositories {
+        width: fit-content;
+        margin: 10px auto 10px auto;
+    }
+
+    .Repositories__form {
+        width: fit-content;
+        margin: 10px auto 10px auto;
+    }
+
+    .Repositories__form--input {
+        font-size: 1.8vw;
+    }
+
+    .Repositories__form--button {
+        margin: 10px;
+        font-size: 1.5vw;
+        font-weight: bold;
+        padding: 2px;
+        background-color: rgb(0, 116, 44);
+        color: rgb(242, 245, 230);
+    }
+
+    .Repositories__form--button:hover {
+        background-color: rgb(0, 21, 116);
+        cursor: pointer;
+    }
+
+    .Repositories__repositoryList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+@media(max-width: 959px) {
+    .Repositories {
+        width: fit-content;
+        margin: 10px auto 10px auto;
+    }
+
+    .Repositories__form {
+        width: fit-content;
+        margin: 10px auto 10px auto;
+    }
+
+    .Repositories__form--input {
+        font-size: 2.6vw;
+    }
+
+    .Repositories__form--button {
+        margin: 10px;
+        font-size: 2.3vw;
+        font-weight: bold;
+        padding: 2px;
+        background-color: rgb(0, 116, 44);
+        color: rgb(242, 245, 230);
+    }
+
+    .Repositories__form--button:hover {
+        background-color: rgb(0, 21, 116);
+        cursor: pointer;
+    }
+
+    .Repositories__repositoryList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+@media(max-width: 779px) {
+    .Repositories {
+        width: fit-content;
+        margin: 10px auto 10px auto;
+    }
+
+    .Repositories__form {
+        width: fit-content;
+        margin: 10px auto 10px auto;
+    }
+
+    .Repositories__form--input {
+        font-size: 3.4000000000000004vw;
+    }
+
+    .Repositories__form--button {
+        margin: 10px;
+        font-size: 3.1vw;
+        font-weight: bold;
+        padding: 2px;
+        background-color: rgb(0, 116, 44);
+        color: rgb(242, 245, 230);
+    }
+
+    .Repositories__form--button:hover {
+        background-color: rgb(0, 21, 116);
+        cursor: pointer;
+    }
+
+    .Repositories__repositoryList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+@media(max-width: 599px) {
+    .Repositories {
+        width: fit-content;
+        margin: 10px auto 10px auto;
+    }
+
+    .Repositories__form {
+        width: fit-content;
+        margin: 10px auto 10px auto;
+    }
+
+    .Repositories__form--input {
+        font-size: 4.2vw;
+    }
+
+    .Repositories__form--button {
+        margin: 10px;
+        font-size: 3.9000000000000004vw;
+        font-weight: bold;
+        padding: 2px;
+        background-color: rgb(0, 116, 44);
+        color: rgb(242, 245, 230);
+    }
+
+    .Repositories__form--button:hover {
+        background-color: rgb(0, 21, 116);
+        cursor: pointer;
+    }
+
+    .Repositories__repositoryList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+@media(max-width: 419px) {
+    .Repositories {
+        width: fit-content;
+        margin: 10px auto 10px auto;
+    }
+
+    .Repositories__form {
+        width: fit-content;
+        margin: 10px auto 10px auto;
+    }
+
+    .Repositories__form--input {
+        font-size: 5vw;
+    }
+
+    .Repositories__form--button {
+        margin: 10px;
+        font-size: 4.7vw;
+        font-weight: bold;
+        padding: 2px;
+        background-color: rgb(0, 116, 44);
+        color: rgb(242, 245, 230);
+    }
+
+    .Repositories__form--button:hover {
+        background-color: rgb(0, 21, 116);
+        cursor: pointer;
+    }
+
+    .Repositories__repositoryList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+@media(max-width: 239px) {
+    .Repositories {
+        width: fit-content;
+        margin: 10px auto 10px auto;
+    }
+
+    .Repositories__form {
+        width: fit-content;
+        margin: 10px auto 10px auto;
+    }
+
+    .Repositories__form--input {
+        font-size: 5.8vw;
+    }
+
+    .Repositories__form--button {
+        margin: 10px;
+        font-size: 5.5vw;
+        font-weight: bold;
+        padding: 2px;
+        background-color: rgb(0, 116, 44);
+        color: rgb(242, 245, 230);
+    }
+
+    .Repositories__form--button:hover {
+        background-color: rgb(0, 21, 116);
+        cursor: pointer;
+    }
+
+    .Repositories__repositoryList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
