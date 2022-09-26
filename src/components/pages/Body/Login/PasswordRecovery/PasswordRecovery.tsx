@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./PasswordRecovery.css";
 import { Api } from "../../../../functions/api.functions";
 
-export default function PasswordRecovery(props: any) {
+export default function PasswordRecovery() {
   const [keyReferences, setKeyReferences] = useState([]);
   const [userEmail, setUserEmail] = useState("");
   const [newPassword, setNewPassword] = useState("");

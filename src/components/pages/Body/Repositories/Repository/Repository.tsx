@@ -2,8 +2,9 @@ import { Api } from "../../../../functions/api.functions";
 import { useDispatch } from "react-redux";
 import { addNote } from "../../../../features/notesSlice";
 import "./Repository.css";
+import { RepositoryCreation } from "../../../../interfaces/RepositoryCreation.interface";
 
-export default function Repository({ repo }: any) {
+export default function Repository({ repo }: RepositoryCreation) {
   const dispatch = useDispatch();
 
   async function createNote() {

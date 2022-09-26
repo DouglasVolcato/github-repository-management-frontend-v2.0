@@ -4,8 +4,9 @@ import { Api } from "../../../../functions/api.functions";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../../../../store/store";
 import { addUser } from "../../../../features/userSlice";
+import { setUserModal } from "../../../../interfaces/SetUserModal.interface";
 
-export default function UserProfile({ setShowUserModal }: any) {
+export default function UserProfile({ setShowUserModal }: setUserModal) {
   const user = useSelector((state: RootState) => state.user.value);
 
   const dispatch = useDispatch();

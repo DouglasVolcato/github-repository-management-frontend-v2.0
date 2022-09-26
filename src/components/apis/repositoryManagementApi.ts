@@ -1,3 +1,9 @@
+import { UpdateNote } from "../interfaces/UpdateNote.interface";
+import { LoginUserBody } from "../interfaces/LoginUserBody";
+import { MainUser } from "../interfaces/MainUser.interface";
+import { SecurityKeysCreation } from "../interfaces/SecurityKeysCreation";
+import { RecoverPassword } from "../interfaces/RecoverPassword.interface";
+
 const baseUrl = "https://repository-management.herokuapp.com";
 
 export const repositoryManagementApi = {
@@ -14,7 +20,7 @@ export const repositoryManagementApi = {
     return data;
   },
 
-  deleteRepo: async (repoName: any) => {
+  deleteRepo: async (repoName: string) => {
     const response = await fetch(
       baseUrl + "/repo/delete-repository/" + repoName,
       {
@@ -30,7 +36,7 @@ export const repositoryManagementApi = {
     return data;
   },
 
-  editRepo: async (repoName: any, repoBody: any) => {
+  editRepo: async (repoName: string, repoBody: UpdateNote) => {
     const response = await fetch(
       baseUrl + "/repo/update-repository/" + repoName,
       {
@@ -47,7 +53,7 @@ export const repositoryManagementApi = {
     return data;
   },
 
-  addRepo: async (repoBody: any) => {
+  addRepo: async (repoBody: UpdateNote) => {
     const response = await fetch(baseUrl + "/repo/create-repository", {
       method: "POST",
       headers: new Headers({
@@ -61,7 +67,7 @@ export const repositoryManagementApi = {
     return data;
   },
 
-  login: async (body: any) => {
+  login: async (body: LoginUserBody) => {
     localStorage.removeItem("userId");
     localStorage.removeItem("userToken");
     const response = await fetch(baseUrl + "/auth/login", {
@@ -78,7 +84,7 @@ export const repositoryManagementApi = {
     return data;
   },
 
-  createUser: async (userBody: any) => {
+  createUser: async (userBody: MainUser) => {
     const response = await fetch(baseUrl + "/user/create-user", {
       method: "POST",
       headers: new Headers({
@@ -120,7 +126,7 @@ export const repositoryManagementApi = {
     return data;
   },
 
-  editUser: async (userBody: any) => {
+  editUser: async (userBody: MainUser) => {
     const response = await fetch(baseUrl + "/user/update-user/", {
       method: "PUT",
       headers: new Headers({
@@ -134,7 +140,7 @@ export const repositoryManagementApi = {
     return data;
   },
 
-  createSecurityKeys: async (body: any) => {
+  createSecurityKeys: async (body: SecurityKeysCreation) => {
     const response = await fetch(baseUrl + "/security/create-security-keys", {
       method: "POST",
       headers: new Headers({
@@ -148,7 +154,7 @@ export const repositoryManagementApi = {
     return data;
   },
 
-  getSecurityKeys: async (userEmail: any) => {
+  getSecurityKeys: async (userEmail: string) => {
     const response = await fetch(
       baseUrl + "/security/get-security-key-references",
       {
@@ -164,7 +170,7 @@ export const repositoryManagementApi = {
     return data;
   },
 
-  recoverPassword: async (body: any) => {
+  recoverPassword: async (body: RecoverPassword) => {
     const response = await fetch(baseUrl + "/security/recover-password", {
       method: "POST",
       headers: new Headers({

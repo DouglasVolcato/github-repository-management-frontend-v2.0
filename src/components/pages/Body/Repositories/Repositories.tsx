@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Repository from "./Repository/Repository";
 import { Api } from "../../../functions/api.functions";
 
@@ -12,7 +12,7 @@ export default function Repositories() {
 
   const dispatch = useDispatch();
 
-  const repositories: [] = useSelector(
+  const repositories = useSelector(
     (state: RootState) => state.repositories.value
   );
 
@@ -59,7 +59,7 @@ export default function Repositories() {
             repo.name.toLowerCase().includes(repoName.toLowerCase()) ||
             repo.id.toString().toLowerCase().includes(repoName.toLowerCase())
           ) {
-            return <Repository repo={repo} repoName={repoName} key={key} />;
+            return <Repository repo={repo} key={key} />;
           }
         })}
       </div>

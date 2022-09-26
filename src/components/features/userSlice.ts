@@ -19,12 +19,10 @@ const userSlice = createSlice({
     addUser: (
       state,
       action: PayloadAction<{
-        id: "";
-        name: "";
-        email: "";
-        photo: "";
-        repositories: [];
-        securityKeys: [];
+        name: string;
+        email: string;
+        photo: string;
+        password: string;
       }>
     ) => {
       state.value = Object.assign(state.value, action.payload);

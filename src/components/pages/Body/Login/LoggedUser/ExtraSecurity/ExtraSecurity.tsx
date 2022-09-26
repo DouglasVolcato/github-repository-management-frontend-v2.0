@@ -5,8 +5,8 @@ import { RootState } from "../../../../../store/store";
 import { addUser } from "../../../../../features/userSlice";
 import "./ExtraSecurity.css";
 
-export default function ExtraSecurity(props: any) {
-  const dispatch = useDispatch()
+export default function ExtraSecurity() {
+  const dispatch = useDispatch();
   const [showFormModal, setShowFormModal] = useState(false);
   const [keys, setKeys] = useState({
     key1: "",
@@ -23,8 +23,8 @@ export default function ExtraSecurity(props: any) {
     event.preventDefault();
     const keysCreation = await Api.createSecuritKeys(user.email, keys);
     if (keysCreation === true) {
-      const loggedUser = await Api.getLoggedUser()
-      dispatch(addUser(loggedUser))
+      const loggedUser = await Api.getLoggedUser();
+      dispatch(addUser(loggedUser));
       setShowFormModal(false);
     }
   }

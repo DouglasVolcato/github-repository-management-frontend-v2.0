@@ -4,8 +4,9 @@ import EditPage from "./EditPage/EditPage";
 import "./Note.css";
 import { useDispatch } from "react-redux";
 import { deleteNote } from "../../../../features/notesSlice";
+import { NoteProps } from "../../../../interfaces/NoteProps.interface";
 
-export default function Note({ props }: any) {
+export default function Note({ props }: NoteProps) {
   const dispatch = useDispatch();
   const [editModal, setEditModal] = useState(false);
 

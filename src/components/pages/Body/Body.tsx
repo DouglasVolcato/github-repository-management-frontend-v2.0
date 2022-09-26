@@ -3,8 +3,9 @@ import Notes from "./Notes/Notes";
 import Login from "./Login/Login";
 import Register from "./Register/Register";
 import "./Body.css";
+import { Page } from "../../interfaces/Page.interface";
 
-export default function Body({ page }: any) {
+export default function Body({ page }: Page) {
   function showPage() {
     if (page === "login") {
       return <Login />;
