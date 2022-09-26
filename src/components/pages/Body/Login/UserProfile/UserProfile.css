@@ -1,0 +1,377 @@
+.UserProfile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.836);
+    font-size: 1.8vw;
+}
+
+.UserProfile input{
+    width: 100%;
+}
+
+.UserProfile__div {
+    width: 60vw;
+    margin: auto;
+    border: solid 2px black;
+    padding: 10px;
+    background-color: rgb(216, 214, 106);
+}
+
+.UserProfile__image{
+    background-color: rgb(216, 214, 106);
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.UserProfile__image--img{
+    min-width: 10%;
+    max-width: 80%;
+    max-height: 40vh;
+    border-radius: 5%;
+}
+
+.UserProfile__image--imgEdit{
+    max-height: 30vh;
+    min-width: 10%;
+    max-width: 60%;
+    border-radius: 5%;
+}
+
+.UserProfile__info {
+    font-size: 1.8vw;
+    font-weight: bold;
+    background-color: rgb(216, 214, 106);
+}
+
+.UserProfile__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 10px;
+    background-color: rgb(216, 214, 106);
+}
+
+.UserProfile__buttons--edit,
+.UserProfile__buttons--delete,
+.UserProfile__buttons--close {
+    background-color: rgb(80, 218, 0);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    width: 100px;
+    margin: 0.5vw;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.UserProfile__buttons--edit:hover {
+    background-color: cyan;
+}
+
+.UserProfile__buttons--delete:hover {
+    background-color: red;
+}
+
+.UserProfile__buttons--close:hover {
+    background-color: yellow;
+}
+
+@media(max-width: 1139px) {
+    .UserProfile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.836);
+        font-size: 1.8vw;
+    }
+
+    .UserProfile__div {
+        width: 60vw;
+        margin: auto;
+        border: solid 2px black;
+        padding: 10px;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .UserProfile__info {
+        font-size: 1.8vw;
+        font-weight: bold;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .UserProfile__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 10px;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .UserProfile__buttons--edit,
+    .UserProfile__buttons--delete,
+    .UserProfile__buttons--close {
+        background-color: rgb(80, 218, 0);
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        width: 100px;
+        margin: 0.5vw;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .UserProfile__buttons--edit:hover {
+        background-color: cyan;
+    }
+
+    .UserProfile__buttons--delete:hover {
+        background-color: red;
+    }
+
+    .UserProfile__buttons--close:hover {
+        background-color: yellow;
+    }
+}
+
+@media(max-width: 939px) {
+    .UserProfile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.836);
+        font-size: 2.6vw;
+    }
+
+    .UserProfile__div {
+        width: 65vw;
+        margin: auto;
+        border: solid 2px black;
+        padding: 10px;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .UserProfile__info {
+        font-size: 2.6vw;
+        font-weight: bold;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .UserProfile__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 10px;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .UserProfile__buttons--edit,
+    .UserProfile__buttons--delete,
+    .UserProfile__buttons--close {
+        background-color: rgb(80, 218, 0);
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        width: 100px;
+        margin: 1.3vw;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .UserProfile__buttons--edit:hover {
+        background-color: cyan;
+    }
+
+    .UserProfile__buttons--delete:hover {
+        background-color: red;
+    }
+
+    .UserProfile__buttons--close:hover {
+        background-color: yellow;
+    }
+}
+
+@media(max-width: 739px) {
+    .UserProfile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.836);
+        font-size: 3.4000000000000004vw;
+    }
+
+    .UserProfile__div {
+        width: 70vw;
+        margin: auto;
+        border: solid 2px black;
+        padding: 10px;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .UserProfile__info {
+        font-size: 3.4vw;
+        font-weight: bold;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .UserProfile__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 10px;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .UserProfile__buttons--edit,
+    .UserProfile__buttons--delete,
+    .UserProfile__buttons--close {
+        background-color: rgb(80, 218, 0);
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        width: 100px;
+        margin: 2.1vw;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .UserProfile__buttons--edit:hover {
+        background-color: cyan;
+    }
+
+    .UserProfile__buttons--delete:hover {
+        background-color: red;
+    }
+
+    .UserProfile__buttons--close:hover {
+        background-color: yellow;
+    }
+}
+
+@media(max-width: 539px) {
+    .UserProfile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.836);
+        font-size: 4.2vw;
+    }
+
+    .UserProfile__div {
+        width: 75vw;
+        margin: auto;
+        border: solid 2px black;
+        padding: 10px;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .UserProfile__info {
+        font-size: 4.2vw;
+        font-weight: bold;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .UserProfile__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 10px;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .UserProfile__buttons--edit,
+    .UserProfile__buttons--delete,
+    .UserProfile__buttons--close {
+        background-color: rgb(80, 218, 0);
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        width: 100px;
+        margin: 2.9000000000000004vw;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .UserProfile__buttons--edit:hover {
+        background-color: cyan;
+    }
+
+    .UserProfile__buttons--delete:hover {
+        background-color: red;
+    }
+
+    .UserProfile__buttons--close:hover {
+        background-color: yellow;
+    }
+}
+
+@media(max-width: 339px) {
+    .UserProfile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.836);
+        font-size: 5vw;
+    }
+
+    .UserProfile__div {
+        width: 80vw;
+        margin: auto;
+        border: solid 2px black;
+        padding: 10px;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .UserProfile__info {
+        font-size: 5vw;
+        font-weight: bold;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .UserProfile__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 10px;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .UserProfile__buttons--edit,
+    .UserProfile__buttons--delete,
+    .UserProfile__buttons--close {
+        background-color: rgb(80, 218, 0);
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        width: 100px;
+        margin: 3.7vw;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .UserProfile__buttons--edit:hover {
+        background-color: cyan;
+    }
+
+    .UserProfile__buttons--delete:hover {
+        background-color: red;
+    }
+
+    .UserProfile__buttons--close:hover {
+        background-color: yellow;
+    }
+}
