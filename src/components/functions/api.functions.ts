@@ -12,8 +12,10 @@ export const Api = {
     try {
       if (apiAnswer.message.includes("Wrong password.")) {
         alert("Wrong password.");
+        return false
       } else if (apiAnswer.message.includes("Email not found.")) {
         alert("Email not registered.");
+        return false
       }
     } catch (err) {
       alert("Successfully logged in!");

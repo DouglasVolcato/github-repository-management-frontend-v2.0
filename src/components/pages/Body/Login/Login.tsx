@@ -15,11 +15,17 @@ export default function Login() {
 
   async function login(event: any) {
     event.preventDefault();
-    await Api.logUser(loginInfo);
-    const userNotes = await Api.getNotes();
-    const loggedUser = await Api.getLoggedUser();
-    dispatch(addUser(loggedUser));
-    dispatch(addNotes(userNotes));
+    const logUser = await Api.logUser(loginInfo);
+
+    if (logUser === false) {
+      dispatch(addUser({ name: "", email: "", photo: "", password: "" }));
+      dispatch(addNotes([]));
+    } else {
+      const userNotes = await Api.getNotes();
+      const loggedUser = await Api.getLoggedUser();
+      dispatch(addUser(loggedUser));
+      dispatch(addNotes(userNotes));
+    }
   }
 
   async function firstLogin() {
