@@ -132,9 +132,7 @@ export const Api = {
   },
 
   deleteNote: async (repoName: any) => {
-    if (window.confirm("Are you sure to delete this note?")) {
-      repositoryManagementApi.deleteRepo(repoName);
-    }
+    repositoryManagementApi.deleteRepo(repoName);
   },
 
   updateNote: async (repoName: any, newNote: any) => {

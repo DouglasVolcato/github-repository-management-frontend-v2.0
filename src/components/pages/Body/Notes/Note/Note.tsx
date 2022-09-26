@@ -10,8 +10,10 @@ export default function Note({ props }: any) {
   const [editModal, setEditModal] = useState(false);
 
   async function deleteNoteByName(repoName: any) {
-    Api.deleteNote(repoName);
-    dispatch(deleteNote(props.key));
+    if (window.confirm("Are you sure to delete this note?")) {
+      Api.deleteNote(repoName);
+      dispatch(deleteNote(props.key));
+    }
   }
 
   function showEditModal() {
