@@ -1,7 +1,7 @@
 //type props
 
 import "./Header.css";
-export default function Header({setPage}:any) {
+export default function Header({ setPage }: any) {
   return (
     <div className="Header">
       <nav className="Header__navbar">

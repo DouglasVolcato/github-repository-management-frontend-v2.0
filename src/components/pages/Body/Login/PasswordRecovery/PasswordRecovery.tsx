@@ -2,22 +2,22 @@ import { useState } from "react";
 import "./PasswordRecovery.css";
 import { Api } from "../../../../functions/api.functions";
 
-export default function PasswordRecovery(props:any) {
+export default function PasswordRecovery(props: any) {
   const [keyReferences, setKeyReferences] = useState([]);
   const [userEmail, setUserEmail] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const [keys, setKeys] = useState({ key1: "", key2: "", key3: "" });
   const [recoveryModal, setRecoveryModal] = useState(false);
 
-  async function getKeyReferences(event:any) {
+  async function getKeyReferences(event: any) {
     event.preventDefault();
-    const data:[] = await Api.getKeyReferences(userEmail)
+    const data: [] = await Api.getKeyReferences(userEmail);
     setKeyReferences([...data]);
   }
 
-  async function sendKeys(event:any) {
+  async function sendKeys(event: any) {
     event.preventDefault();
-    const sentKeys = await Api.sendKeys(userEmail, newPassword, keys)
+    const sentKeys = await Api.sendKeys(userEmail, newPassword, keys);
     setRecoveryModal(sentKeys);
   }
 

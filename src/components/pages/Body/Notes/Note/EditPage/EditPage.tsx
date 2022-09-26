@@ -4,8 +4,8 @@ import { Api } from "../../../../../functions/api.functions";
 import { useDispatch } from "react-redux";
 import { editNote } from "../../../../../features/notesSlice";
 
-export default function EditPage({props}: any) {
-  const dispatch = useDispatch()
+export default function EditPage({ props }: any) {
+  const dispatch = useDispatch();
   const [newNote, setNewNote] = useState({});
   const [noteInfo, setNoteInfo] = useState({
     name: props.data.name,
@@ -16,7 +16,7 @@ export default function EditPage({props}: any) {
     event.preventDefault();
     setNewNote({ ...newNote });
     Api.updateNote(props.data.name, newNote);
-    dispatch(editNote({index: props.key, body: newNote}))
+    dispatch(editNote({ index: props.key, body: newNote }));
     props.showEditModal();
   }
 

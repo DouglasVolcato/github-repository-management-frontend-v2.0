@@ -4,8 +4,7 @@ import { addNote } from "../../../../features/notesSlice";
 import "./Repository.css";
 
 export default function Repository({ repo }: any) {
-
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   async function createNote() {
     const body = {
@@ -14,9 +13,9 @@ export default function Repository({ repo }: any) {
       priority: "Low",
       deadline: new Date().toISOString().slice(0, 10),
       note: "Empty",
-    }
-    Api.createNote(body)
-    dispatch(addNote(body))
+    };
+    Api.createNote(body);
+    dispatch(addNote(body));
   }
 
   return (

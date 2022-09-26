@@ -9,7 +9,7 @@
     font-size: 1.8vw;
 }
 
-.UserProfile input{
+.UserProfile input {
     width: 100%;
 }
 
@@ -21,7 +21,7 @@
     background-color: rgb(216, 214, 106);
 }
 
-.UserProfile__image{
+.UserProfile__image {
     background-color: rgb(216, 214, 106);
     width: 85%;
     display: flex;
@@ -29,14 +29,14 @@
     margin: 20px;
 }
 
-.UserProfile__image--img{
+.UserProfile__image--img {
     min-width: 10%;
     max-width: 80%;
     max-height: 40vh;
     border-radius: 5%;
 }
 
-.UserProfile__image--imgEdit{
+.UserProfile__image--imgEdit {
     max-height: 30vh;
     min-width: 10%;
     max-width: 60%;

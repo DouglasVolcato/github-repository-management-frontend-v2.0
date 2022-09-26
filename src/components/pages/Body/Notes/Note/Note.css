@@ -10,17 +10,17 @@
     font-size: 1.6vw;
 }
 
-.highPriority{
+.highPriority {
     border: solid 10px red;
 }
 
-.mediumPriority{
+.mediumPriority {
     border: solid 10px yellow;
 }
 
-.lowPriority{
+.lowPriority {
     border: solid 10px rgb(0, 110, 255);
-    
+
 }
 
 .Note__name, .Note__priority, .Note__note {

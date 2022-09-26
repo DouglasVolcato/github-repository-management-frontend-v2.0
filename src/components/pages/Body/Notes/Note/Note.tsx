@@ -5,13 +5,13 @@ import "./Note.css";
 import { useDispatch } from "react-redux";
 import { deleteNote } from "../../../../features/notesSlice";
 
-export default function Note({props}:any) {
-  const dispatch = useDispatch()
+export default function Note({ props }: any) {
+  const dispatch = useDispatch();
   const [editModal, setEditModal] = useState(false);
 
-  async function deleteNoteByName(repoName:any) {
-    Api.deleteNote(repoName)
-    dispatch(deleteNote(props.key))
+  async function deleteNoteByName(repoName: any) {
+    Api.deleteNote(repoName);
+    dispatch(deleteNote(props.key));
   }
 
   function showEditModal() {
@@ -57,7 +57,13 @@ export default function Note({props}:any) {
       </div>
 
       {editModal === true ? (
-        <EditPage props={{data: props.data, key: props.key, showEditModal: showEditModal}} />
+        <EditPage
+          props={{
+            data: props.data,
+            key: props.key,
+            showEditModal: showEditModal,
+          }}
+        />
       ) : (
         <></>
       )}

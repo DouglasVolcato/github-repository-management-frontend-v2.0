@@ -4,9 +4,8 @@ import Login from "./Login/Login";
 import Register from "./Login/Register/Register";
 import "./Body.css";
 
-export default function Body({page}:any) {
+export default function Body({ page }: any) {
   function showPage() {
-
     if (page === "login") {
       return <Login />;
     } else if (page === "register") {

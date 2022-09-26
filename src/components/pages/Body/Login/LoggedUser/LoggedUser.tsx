@@ -3,11 +3,8 @@ import ExtraSecurity from "./ExtraSecurity/ExtraSecurity";
 import { useSelector } from "react-redux";
 import { RootState } from "../../../../store/store";
 
-
-export default function LoggedUser({setShowUserModal}:any) {
-    const user = useSelector(
-        (state: RootState) => (state.user.value)
-    )
+export default function LoggedUser({ setShowUserModal }: any) {
+  const user = useSelector((state: RootState) => state.user.value);
 
   return (
     <div className="LoggedUser">
@@ -21,7 +18,7 @@ export default function LoggedUser({setShowUserModal}:any) {
             ✓ Logged as {user.name}
           </button>
 
-          <ExtraSecurity user={user}/>
+          <ExtraSecurity user={user} />
         </div>
       ) : (
         <div>

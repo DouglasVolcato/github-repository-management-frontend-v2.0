@@ -5,32 +5,29 @@ import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../../../../store/store";
 import { addUser } from "../../../../features/userSlice";
 
-export default function UserProfile({setShowUserModal}:any) {
+export default function UserProfile({ setShowUserModal }: any) {
+  const user = useSelector((state: RootState) => state.user.value);
 
-    const user = useSelector(
-        (state: RootState) => (state.user.value)
-      )
-
-      const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   const [editionPage, setEditionPage] = useState(false);
   const [editedUser, setEditedUser] = useState({
     email: user.email,
     name: user.name,
     photo: user.photo,
-    password: ""
+    password: "",
   });
 
   async function deleteUser() {
-    Api.deleteUser()
+    Api.deleteUser();
   }
 
-  async function editUser(event:any) {
+  async function editUser(event: any) {
     event.preventDefault();
-    const userEdition = await Api.editUser(editedUser)
-    if(userEdition === true){
-      dispatch(addUser(editedUser))
-      setEditionPage(false)
+    const userEdition = await Api.editUser(editedUser);
+    if (userEdition === true) {
+      dispatch(addUser(editedUser));
+      setEditionPage(false);
     }
   }
 
@@ -53,9 +50,7 @@ export default function UserProfile({setShowUserModal}:any) {
           <p className="UserProfile__info">Email: {user.email}</p>
           <p className="UserProfile__info">
             Photo:{" "}
-            {user.photo === "" || user.photo === undefined
-              ? "Unset"
-              : "Set"}
+            {user.photo === "" || user.photo === undefined ? "Unset" : "Set"}
           </p>
           <p className="UserProfile__info">Password: Secret</p>
 

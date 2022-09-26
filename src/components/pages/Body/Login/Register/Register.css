@@ -34,14 +34,14 @@
     color: white;
 }
 
-.Register__image{
+.Register__image {
     width: 95%;
     display: flex;
     justify-content: center;
     margin: 20px;
 }
 
-.Register__image--img{
+.Register__image--img {
     width: 250px;
     min-width: 10%;
     max-width: 80%;

@@ -18,7 +18,7 @@ export default function Repositories() {
 
   async function selectName(event: any) {
     event.preventDefault();
-    const repos = await Api.getAllRepositories(event.target.name.value)
+    const repos = await Api.getAllRepositories(event.target.name.value);
     dispatch(addRepositories([...repos]));
   }
 
@@ -54,16 +54,14 @@ export default function Repositories() {
       </form>
 
       <div className="Repositories__repositoryList">
- 
-         { repositories.map((repo: any, key) => {
-            if (
-              repo.name.toLowerCase().includes(repoName.toLowerCase()) ||
-              repo.id.toString().toLowerCase().includes(repoName.toLowerCase())
-            ) {
-              return <Repository repo={repo} repoName={repoName} key={key} />;
-            }
-          })}
-
+        {repositories.map((repo: any, key) => {
+          if (
+            repo.name.toLowerCase().includes(repoName.toLowerCase()) ||
+            repo.id.toString().toLowerCase().includes(repoName.toLowerCase())
+          ) {
+            return <Repository repo={repo} repoName={repoName} key={key} />;
+          }
+        })}
       </div>
     </div>
   );

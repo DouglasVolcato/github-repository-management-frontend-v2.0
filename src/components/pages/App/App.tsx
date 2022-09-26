@@ -2,7 +2,7 @@ import Body from "../Body/Body";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { useState } from "react";
-import "./App.css"
+import "./App.css";
 
 export default function App() {
   const [page, setPage] = useState("login");

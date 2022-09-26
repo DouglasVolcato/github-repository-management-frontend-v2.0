@@ -9,29 +9,29 @@ import { addNotes } from "../../../features/notesSlice";
 import UserProfile from "./UserProfile/UserProfile";
 
 export default function Login() {
-    const [showUserModal, setShowUserModal] = useState(false);
+  const [showUserModal, setShowUserModal] = useState(false);
   const [loginInfo, setLoginInfo] = useState({ email: "", password: "" });
   const dispatch = useDispatch();
 
   async function login(event: any) {
     event.preventDefault();
     await Api.logUser(loginInfo);
-    const userNotes = await Api.getNotes()
-    const loggedUser = await Api.getLoggedUser()
-    dispatch(addUser(loggedUser))
-    dispatch(addNotes(userNotes))
+    const userNotes = await Api.getNotes();
+    const loggedUser = await Api.getLoggedUser();
+    dispatch(addUser(loggedUser));
+    dispatch(addNotes(userNotes));
   }
 
   async function firstLogin() {
-    const loggedUser = await Api.getLoggedUser()
-    const userNotes = await Api.getNotes()
-    dispatch(addUser(loggedUser))
-    dispatch(addNotes(userNotes))
+    const loggedUser = await Api.getLoggedUser();
+    const userNotes = await Api.getNotes();
+    dispatch(addUser(loggedUser));
+    dispatch(addNotes(userNotes));
   }
 
   useEffect(() => {
-    firstLogin()
-  }, [])
+    firstLogin();
+  }, []);
 
   return (
     <div className="Login">
@@ -61,10 +61,7 @@ export default function Login() {
           }}
         />
         <br />
-        <button
-          className="Login__form--button"
-          type="submit"
-        >
+        <button className="Login__form--button" type="submit">
           SUBMIT
         </button>
       </form>
@@ -74,11 +71,9 @@ export default function Login() {
       {showUserModal === false ? (
         <span></span>
       ) : (
-        <UserProfile
-          setShowUserModal={setShowUserModal}
-        />
+        <UserProfile setShowUserModal={setShowUserModal} />
       )}
-      <LoggedUser setShowUserModal={setShowUserModal}/>
+      <LoggedUser setShowUserModal={setShowUserModal} />
     </div>
   );
 }

@@ -48,7 +48,9 @@
     background-color: rgb(216, 214, 106);
 }
 
-.ExtraSecurity__modal--form input, .ExtraSecurity__modal--form label, .ExtraSecurity__intro {
+.ExtraSecurity__modal--form input,
+.ExtraSecurity__modal--form label,
+.ExtraSecurity__intro {
     width: 100%;
     font-size: 1.5vw;
     margin: 5px;
@@ -114,7 +116,9 @@
         background-color: rgb(216, 214, 106);
     }
 
-    .ExtraSecurity__modal--form input, .ExtraSecurity__modal--form label, .ExtraSecurity__intro {
+    .ExtraSecurity__modal--form input,
+    .ExtraSecurity__modal--form label,
+    .ExtraSecurity__intro {
         width: 100%;
         font-size: 1.5vw;
         margin: 5px;
@@ -158,7 +162,9 @@
         background-color: rgb(216, 214, 106);
     }
 
-    .ExtraSecurity__modal--form input, .ExtraSecurity__modal--form label, .ExtraSecurity__intro {
+    .ExtraSecurity__modal--form input,
+    .ExtraSecurity__modal--form label,
+    .ExtraSecurity__intro {
         width: 100%;
         font-size: 2.3vw;
         margin: 5px;
@@ -202,7 +208,9 @@
         background-color: rgb(216, 214, 106);
     }
 
-    .ExtraSecurity__modal--form input, .ExtraSecurity__modal--form label, .ExtraSecurity__intro {
+    .ExtraSecurity__modal--form input,
+    .ExtraSecurity__modal--form label,
+    .ExtraSecurity__intro {
         width: 100%;
         font-size: 3.1vw;
         margin: 5px;
@@ -246,7 +254,9 @@
         background-color: rgb(216, 214, 106);
     }
 
-    .ExtraSecurity__modal--form input, .ExtraSecurity__modal--form label, .ExtraSecurity__intro {
+    .ExtraSecurity__modal--form input,
+    .ExtraSecurity__modal--form label,
+    .ExtraSecurity__intro {
         width: 100%;
         font-size: 3.9000000000000004vw;
         margin: 5px;
@@ -290,7 +300,9 @@
         background-color: rgb(216, 214, 106);
     }
 
-    .ExtraSecurity__modal--form input, .ExtraSecurity__modal--form label, .ExtraSecurity__intro {
+    .ExtraSecurity__modal--form input,
+    .ExtraSecurity__modal--form label,
+    .ExtraSecurity__intro {
         width: 100%;
         font-size: 4.7vw;
         margin: 5px;

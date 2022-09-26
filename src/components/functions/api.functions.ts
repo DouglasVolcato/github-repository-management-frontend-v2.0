@@ -3,7 +3,7 @@ import { gitHubApi } from "../apis/githubApi";
 
 export const Api = {
   getNotes: async () => {
-    const data: [] = await repositoryManagementApi.getAllRepo()
+    const data: [] = await repositoryManagementApi.getAllRepo();
     return data;
   },
 
@@ -141,38 +141,23 @@ export const Api = {
     repositoryManagementApi.editRepo(repoName, newNote);
   },
 
-  sortFunction: (arr:any) => {
+  sortFunction: (arr: any) => {
+    const priorityHigh = arr
+      .filter((i: any) => i.priority === "High")
+      .sort((a: any, b: any) => {
+        return a.deadline > b.deadline ? 1 : a.deadline === b.deadline ? 0 : -1;
+      });
+    const priorityMedium = arr
+      .filter((i: any) => i.priority === "Medium")
+      .sort((a: any, b: any) => {
+        return a.deadline > b.deadline ? 1 : a.deadline === b.deadline ? 0 : -1;
+      });
+    const priorityLow = arr
+      .filter((i: any) => i.priority === "Low")
+      .sort((a: any, b: any) => {
+        return a.deadline > b.deadline ? 1 : a.deadline === b.deadline ? 0 : -1;
+      });
 
-    
-      const priorityHigh = arr
-        .filter((i: any) => i.priority === "High")
-        .sort((a: any, b: any) => {
-          return a.deadline > b.deadline
-            ? 1
-            : a.deadline === b.deadline
-            ? 0
-            : -1;
-        });
-      const priorityMedium = arr
-        .filter((i: any) => i.priority === "Medium")
-        .sort((a: any, b: any) => {
-          return a.deadline > b.deadline
-            ? 1
-            : a.deadline === b.deadline
-            ? 0
-            : -1;
-        });
-      const priorityLow = arr
-        .filter((i: any) => i.priority === "Low")
-        .sort((a: any, b: any) => {
-          return a.deadline > b.deadline
-            ? 1
-            : a.deadline === b.deadline
-            ? 0
-            : -1;
-        });
-
-      return priorityHigh.concat(priorityMedium).concat(priorityLow);
-
-  }
+    return priorityHigh.concat(priorityMedium).concat(priorityLow);
+  },
 };
