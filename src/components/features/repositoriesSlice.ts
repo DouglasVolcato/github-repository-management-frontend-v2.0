@@ -1,10 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { RepositoryInterface } from "../interfaces/Repository.interface";
 
-interface RepositoriesState {
-  value: any;
-}
-
-const initialState: RepositoriesState = {
+const initialState: RepositoryInterface = {
   value: [],
 };
 
@@ -12,7 +9,16 @@ const repositoriesSlice = createSlice({
   name: "repositories",
   initialState,
   reducers: {
-    addRepositories: (state, action: PayloadAction<[]>) => {
+    addRepositories: (
+      state,
+      action: PayloadAction<
+        {
+          id: string;
+          name: string;
+          svn_url: string;
+        }[]
+      >
+    ) => {
       state.value = action.payload;
     },
   },

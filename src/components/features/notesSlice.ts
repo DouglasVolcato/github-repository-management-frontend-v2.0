@@ -1,11 +1,8 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { Api } from "../functions/api.functions";
+import { NoteInterface } from "../interfaces/Note.interface";
 
-interface NotesState {
-  value: any;
-}
-
-const initialState: NotesState = {
+const initialState: NoteInterface = {
   value: [],
 };
 
@@ -16,7 +13,16 @@ const notesSlice = createSlice({
     addNotes: (state, action: PayloadAction<[]>) => {
       state.value = Api.sortFunction(action.payload);
     },
-    addNote: (state, action: PayloadAction<{}>) => {
+    addNote: (
+      state,
+      action: PayloadAction<{
+        name: string;
+        link: string;
+        priority: string;
+        deadline: string;
+        note: string;
+      }>
+    ) => {
       const newState = state.value;
       newState.push(action.payload);
       state.value = Api.sortFunction(newState);
