@@ -1,10 +1,12 @@
 import { Api } from "../../../../../functions/api.functions";
 import { useState } from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../../../../../store/store";
+import { addUser } from "../../../../../features/userSlice";
 import "./ExtraSecurity.css";
 
 export default function ExtraSecurity(props: any) {
+  const dispatch = useDispatch()
   const [showFormModal, setShowFormModal] = useState(false);
   const [keys, setKeys] = useState({
     key1: "",
@@ -21,6 +23,8 @@ export default function ExtraSecurity(props: any) {
     event.preventDefault();
     const keysCreation = await Api.createSecuritKeys(user.email, keys);
     if (keysCreation === true) {
+      const loggedUser = await Api.getLoggedUser()
+      dispatch(addUser(loggedUser))
       setShowFormModal(false);
     }
   }
