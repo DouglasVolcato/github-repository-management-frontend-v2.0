@@ -1,0 +1,136 @@
+.LoggedUser {
+    text-align: center;
+    margin-top: 50px;
+    width: 30vw;
+    margin: 40px auto auto auto;
+    border: none;
+    border-radius: 5%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.LoggedUser__logged {
+    font-weight: bold;
+    border: solid 2px green;
+    font-size: 1.3vw;
+    height: 100%;
+    width: 100%;
+    color: green;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.LoggedUser__notLogged {
+    font-size: 1.3vw;
+    color: rgb(0, 140, 255);
+}
+
+.LoggedUser__logged:hover {
+    background-color: blue;
+    color: yellow;
+}
+
+@media(max-width: 1139px) {
+    .LoggedUser {
+        width: 32vw;
+    }
+
+    .LoggedUser__logged {
+        border: solid 2px green;
+        font-size: 1.3vw;
+        height: 100%;
+        width: 100%;
+        color: green;
+        padding: 3px;
+        cursor: pointer;
+    }
+
+    .LoggedUser__notLogged {
+        font-size: 1.3vw;
+        color: rgb(0, 140, 255);
+    }
+}
+
+@media(max-width: 939px) {
+    .LoggedUser {
+        width: 34vw;
+    }
+
+    .LoggedUser__logged {
+        border: solid 2px green;
+        font-size: 2.1vw;
+        height: 100%;
+        width: 100%;
+        color: green;
+        padding: 3px;
+        cursor: pointer;
+    }
+
+    .LoggedUser__notLogged {
+        font-size: 2.1vw;
+        color: rgb(0, 140, 255);
+    }
+}
+
+@media(max-width: 739px) {
+    .LoggedUser {
+        width: 39vw;
+    }
+
+    .LoggedUser__logged {
+        border: solid 2px green;
+        font-size: 2.9000000000000004vw;
+        height: 100%;
+        width: 100%;
+        color: green;
+        padding: 3px;
+        cursor: pointer;
+    }
+
+    .LoggedUser__notLogged {
+        font-size: 2.9000000000000004vw;
+        color: rgb(0, 140, 255);
+    }
+}
+
+@media(max-width: 539px) {
+    .LoggedUser {
+        width: 44vw;
+    }
+
+    .LoggedUser__logged {
+        border: solid 2px green;
+        font-size: 3.7vw;
+        height: 100%;
+        width: 100%;
+        color: green;
+        padding: 3px;
+        cursor: pointer;
+    }
+
+    .LoggedUser__notLogged {
+        font-size: 3.7vw;
+        color: rgb(0, 140, 255);
+    }
+}
+
+@media(max-width: 339px) {
+    .LoggedUser {
+        width: 50vw;
+    }
+
+    .LoggedUser__logged {
+        border: solid 2px green;
+        font-size: 4.5vw;
+        height: 100%;
+        width: 100%;
+        color: green;
+        padding: 3px;
+        cursor: pointer;
+    }
+
+    .LoggedUser__notLogged {
+        font-size: 4.5vw;
+        color: rgb(0, 140, 255);
+    }
+}
