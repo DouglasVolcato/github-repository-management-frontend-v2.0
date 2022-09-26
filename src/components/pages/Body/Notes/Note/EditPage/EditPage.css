@@ -1,0 +1,342 @@
+.EditPage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.836);
+    font-size: 1.8vw;
+}
+
+.EditPage__form {
+    width: 50%;
+    margin: auto;
+    border: solid 2px black;
+    padding: 10px;
+    background-color: rgb(216, 214, 106);
+}
+
+.EditPage__form--input {
+    width: 100%;
+    font-size: 1.5vw;
+    margin: 5px;
+    background-color: rgb(216, 214, 106);
+}
+
+.EditPage__form--buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 10px;
+    background-color: rgb(216, 214, 106);
+}
+
+.EditPage__form--submitButton, .EditPage__form--closeButton {
+    background-color: rgb(80, 218, 0);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    width: 100px;
+    margin: 0.5vw;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.EditPage__form--submitButton:hover, .EditPage__form--closeButton:hover {
+    background-color: blue;
+    color: white;
+}
+
+@media(max-width: 1139px) {
+    .EditPage {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.836);
+        font-size: 1.8vw;
+    }
+
+    .EditPage__form {
+        width: 55%;
+        margin: auto;
+        border: solid 2px black;
+        padding: 10px;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .EditPage__form--input {
+        font-size: 1.5vw;
+        margin: 5px;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .EditPage__form--buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 10px;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .EditPage__form--submitButton, .EditPage__form--closeButton {
+        background-color: rgb(80, 218, 0);
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        width: 100px;
+        margin: 0.5vw;
+        font-weight: bold;
+    }
+
+    .EditPage__form--submitButton:hover, .EditPage__form--closeButton:hover {
+        background-color: blue;
+        color: white;
+    }
+}
+
+@media(max-width: 959px) {
+    .EditPage {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.836);
+        font-size: 2.3vw;
+    }
+
+    .EditPage__form {
+        width: 60%;
+        margin: auto;
+        border: solid 2px black;
+        padding: 10px;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .EditPage__form--input {
+        font-size: 2vw;
+        margin: 5px;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .EditPage__form--buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 10px;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .EditPage__form--submitButton, .EditPage__form--closeButton {
+        background-color: rgb(80, 218, 0);
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        width: 100px;
+        margin: 1vw;
+        font-weight: bold;
+    }
+
+    .EditPage__form--submitButton:hover, .EditPage__form--closeButton:hover {
+        background-color: blue;
+        color: white;
+    }
+}
+
+@media(max-width: 779px) {
+    .EditPage {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.836);
+        font-size: 2.8vw;
+    }
+
+    .EditPage__form {
+        width: 65%;
+        margin: auto;
+        border: solid 2px black;
+        padding: 10px;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .EditPage__form--input {
+        font-size: 2.5vw;
+        margin: 5px;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .EditPage__form--buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 10px;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .EditPage__form--submitButton, .EditPage__form--closeButton {
+        background-color: rgb(80, 218, 0);
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        width: 100px;
+        margin: 1.5vw;
+        font-weight: bold;
+    }
+
+    .EditPage__form--submitButton:hover, .EditPage__form--closeButton:hover {
+        background-color: blue;
+        color: white;
+    }
+}
+
+@media(max-width: 599px) {
+    .EditPage {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.836);
+        font-size: 3.3vw;
+    }
+
+    .EditPage__form {
+        width: 70%;
+        margin: auto;
+        border: solid 2px black;
+        padding: 10px;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .EditPage__form--input {
+        font-size: 3vw;
+        margin: 5px;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .EditPage__form--buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 10px;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .EditPage__form--submitButton, .EditPage__form--closeButton {
+        background-color: rgb(80, 218, 0);
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        width: 100px;
+        margin: 2vw;
+        font-weight: bold;
+    }
+
+    .EditPage__form--submitButton:hover, .EditPage__form--closeButton:hover {
+        background-color: blue;
+        color: white;
+    }
+}
+
+@media(max-width: 419px) {
+    .EditPage {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.836);
+        font-size: 3.8vw;
+    }
+
+    .EditPage__form {
+        width: 80%;
+        margin: auto;
+        border: solid 2px black;
+        padding: 10px;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .EditPage__form--input {
+        font-size: 3.5vw;
+        margin: 5px;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .EditPage__form--buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 10px;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .EditPage__form--submitButton, .EditPage__form--closeButton {
+        background-color: rgb(80, 218, 0);
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        width: 100px;
+        margin: 2.5vw;
+        font-weight: bold;
+    }
+
+    .EditPage__form--submitButton:hover, .EditPage__form--closeButton:hover {
+        background-color: blue;
+        color: white;
+    }
+}
+
+@media(max-width: 239px) {
+    .EditPage {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.836);
+        font-size: 4.3vw;
+    }
+
+    .EditPage__form {
+        width: 85%;
+        margin: auto;
+        border: solid 2px black;
+        padding: 10px;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .EditPage__form--input {
+        font-size: 4vw;
+        margin: 5px;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .EditPage__form--buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 10px;
+        background-color: rgb(216, 214, 106);
+    }
+
+    .EditPage__form--submitButton, .EditPage__form--closeButton {
+        background-color: rgb(80, 218, 0);
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        width: 100px;
+        margin: 3vw;
+        font-weight: bold;
+    }
+
+    .EditPage__form--submitButton:hover, .EditPage__form--closeButton:hover {
+        background-color: blue;
+        color: white;
+    }
+}
