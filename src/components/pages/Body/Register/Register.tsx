@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Api } from "../../../../functions/api.functions";
+import { Api } from "../../../functions/api.functions";
 import "./Register.css";
 
 export default function Register() {

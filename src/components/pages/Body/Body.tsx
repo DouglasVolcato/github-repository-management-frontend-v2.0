@@ -1,7 +1,7 @@
 import Repositories from "./Repositories/Repositories";
 import Notes from "./Notes/Notes";
 import Login from "./Login/Login";
-import Register from "./Login/Register/Register";
+import Register from "./Register/Register";
 import "./Body.css";
 
 export default function Body({ page }: any) {
