@@ -6,6 +6,7 @@
     border: solid 2px darkgoldenrod;
     background-color: rgb(201, 174, 108);
     border-radius: 2%;
+    box-shadow: 1px 1px 1px 1px rgb(53, 53, 53);
 }
 
 .Repository__name {
@@ -35,8 +36,9 @@
     width: 100%;
     font-size: 20px;
     padding: 2px;
-    background-color: darkgreen;
+    background-color: rgb(3, 128, 3);
     color: aliceblue;
+    box-shadow: 0.5px 1px 1px 1px rgb(53, 53, 53);
 }
 
 .Repository__accessButton {
@@ -44,7 +46,7 @@
     font-weight: bold;
     height: 100%;
     width: 100px;
-    background-color: darkgreen;
+    background-color: rgb(3, 128, 3);
     color: aliceblue;
 }
 
@@ -54,8 +56,9 @@
     width: 100px;
     font-size: 20px;
     padding: 2px;
-    background-color: darkgreen;
+    background-color: rgb(3, 128, 3);
     color: aliceblue;
+    box-shadow: 0.5px 1px 1px 1px rgb(53, 53, 53);
 }
 
 .Repository__accessButton2:hover {

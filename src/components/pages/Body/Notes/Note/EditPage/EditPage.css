@@ -22,6 +22,7 @@
     font-size: 1.5vw;
     margin: 5px;
     background-color: rgb(216, 214, 106);
+    box-shadow: 0.2px 1px 0.2px 0.2px rgb(53, 53, 53);
 }
 
 .EditPage__form--buttons {
@@ -40,6 +41,7 @@
     margin: 0.5vw;
     font-weight: bold;
     cursor: pointer;
+    box-shadow: 0.2px 1px 0.2px 0.2px rgb(53, 53, 53);
 }
 
 .EditPage__form--submitButton:hover, .EditPage__form--closeButton:hover {

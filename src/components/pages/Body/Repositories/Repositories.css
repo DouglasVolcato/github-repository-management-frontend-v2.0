@@ -10,6 +10,7 @@
 
 .Repositories__form--input {
     font-size: 1.8vw;
+    box-shadow: 0.2px 1px 0.2px 0.2px rgb(53, 53, 53);
 }
 
 .Repositories__form--button {
@@ -17,9 +18,9 @@
     font-size: 1.5vw;
     font-weight: bold;
     padding: 2px;
-    background-color: rgb(0, 116, 44);
+    background-color: rgb(1, 128, 50);
     color: rgb(242, 245, 230);
-    box-shadow: 1px 1px 1px 1px rgb(53, 53, 53);
+    box-shadow: 0.2px 1px 0.2px 0.2px rgb(53, 53, 53);
 }
 
 .Repositories__form--button:hover {

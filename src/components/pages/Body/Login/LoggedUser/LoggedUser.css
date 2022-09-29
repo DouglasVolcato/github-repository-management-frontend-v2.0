@@ -18,6 +18,7 @@
     color: green;
     padding: 3px;
     cursor: pointer;
+    box-shadow: 1px 1px 1px 1px rgb(53, 53, 53);
 }
 
 .LoggedUser__notLogged {

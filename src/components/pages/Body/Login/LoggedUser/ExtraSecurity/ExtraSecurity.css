@@ -5,6 +5,7 @@
     border-radius: 5%;
     font-weight: bold;
     cursor: pointer;
+    box-shadow: 1px 1px 1px 1px rgb(53, 53, 53);
 }
 
 #ExtraSecurityEnabled {

@@ -19,6 +19,7 @@
     border: solid 2px black;
     padding: 10px;
     background-color: rgb(216, 214, 106);
+    box-shadow: 1px 1px 1px 1px rgb(71, 71, 71);
 }
 
 .UserProfile__image {
@@ -67,6 +68,7 @@
     margin: 0.5vw;
     font-weight: bold;
     cursor: pointer;
+    box-shadow: 1px 1px 1px 1px rgb(71, 71, 71);
 }
 
 .UserProfile__buttons--edit:hover {

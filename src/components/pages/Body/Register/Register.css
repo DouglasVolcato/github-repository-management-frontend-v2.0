@@ -17,6 +17,7 @@
 .Register__form--input {
     font-size: 1.8vw;
     border-radius: 5%;
+    box-shadow: 0.2px 1px 0.2px 0.2px rgb(53, 53, 53);
 }
 
 .Register__form--button {
