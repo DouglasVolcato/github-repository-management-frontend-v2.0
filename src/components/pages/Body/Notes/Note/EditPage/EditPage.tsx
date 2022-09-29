@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./EditPage.css";
 import { Api } from "../../../../../functions/api.functions";
 import { useDispatch } from "react-redux";
-import { editNote } from "../../../../../features/notesSlice";
+import { addNotes, editNote } from "../../../../../features/notesSlice";
 
 export default function EditPage({ props }: any) {
   const dispatch = useDispatch();
@@ -20,6 +20,11 @@ export default function EditPage({ props }: any) {
       dispatch(editNote({ index: props.key, body: newNote }));
       props.showEditModal();
     }
+
+    setTimeout(async () => {
+      const userNotes = await Api.getNotes();
+      dispatch(addNotes(userNotes));
+    }, 3000);
   }
 
   return (

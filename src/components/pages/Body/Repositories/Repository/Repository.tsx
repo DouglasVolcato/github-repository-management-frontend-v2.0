@@ -1,6 +1,6 @@
 import { Api } from "../../../../functions/api.functions";
 import { useDispatch } from "react-redux";
-import { addNote } from "../../../../features/notesSlice";
+import { addNote, addNotes } from "../../../../features/notesSlice";
 import "./Repository.css";
 import { RepositoryCreation } from "../../../../interfaces/RepositoryCreation.interface";
 
@@ -18,6 +18,11 @@ export default function Repository({ repo }: RepositoryCreation) {
       };
       Api.createNote(body);
       dispatch(addNote(body));
+
+      setTimeout(async () => {
+        const userNotes = await Api.getNotes();
+        dispatch(addNotes(userNotes));
+      }, 3000);
     }
   }
 

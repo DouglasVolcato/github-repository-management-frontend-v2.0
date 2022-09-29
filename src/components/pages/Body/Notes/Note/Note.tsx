@@ -3,7 +3,7 @@ import { Api } from "../../../../functions/api.functions";
 import EditPage from "./EditPage/EditPage";
 import "./Note.css";
 import { useDispatch } from "react-redux";
-import { deleteNote } from "../../../../features/notesSlice";
+import { addNotes, deleteNote } from "../../../../features/notesSlice";
 import { NoteProps } from "../../../../interfaces/NoteProps.interface";
 
 export default function Note({ props }: NoteProps) {
@@ -17,6 +17,11 @@ export default function Note({ props }: NoteProps) {
         dispatch(deleteNote(props.key));
       }
     }
+
+    setTimeout(async () => {
+      const userNotes = await Api.getNotes();
+      dispatch(addNotes(userNotes));
+    }, 3000);
   }
 
   function showEditModal() {
