@@ -8,6 +8,7 @@
     margin: 10px 5px 10px 5px;
     padding: 10px;
     font-size: 1.6vw;
+    box-shadow: 1px 1px 1px 1px;
 }
 
 .highPriority {
@@ -47,6 +48,7 @@
     border-radius: 5%;
     cursor: pointer;
     font-weight: bold;
+    box-shadow: 1px 1px 1px 1px;
 }
 
 .Note__a {

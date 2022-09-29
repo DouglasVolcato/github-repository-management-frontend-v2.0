@@ -28,6 +28,7 @@
     border-radius: 5%;
     font-weight: bold;
     cursor: pointer;
+    box-shadow: 1px 1px 1px 1px;
 }
 
 .Login__form--button:hover {
