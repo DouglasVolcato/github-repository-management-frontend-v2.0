@@ -11,9 +11,11 @@ export default function Note({ props }: NoteProps) {
   const [editModal, setEditModal] = useState(false);
 
   async function deleteNoteByName(repoName: any) {
-    if (window.confirm("Are you sure to delete this note?")) {
-      Api.deleteNote(repoName);
-      dispatch(deleteNote(props.key));
+    if (Api.offlineChecker()) {
+      if (window.confirm("Are you sure to delete this note?")) {
+        Api.deleteNote(repoName);
+        dispatch(deleteNote(props.key));
+      }
     }
   }
 

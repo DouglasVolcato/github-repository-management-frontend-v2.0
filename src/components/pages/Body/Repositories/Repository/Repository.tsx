@@ -8,15 +8,17 @@ export default function Repository({ repo }: RepositoryCreation) {
   const dispatch = useDispatch();
 
   async function createNote() {
-    const body = {
-      name: repo.name,
-      link: repo.svn_url,
-      priority: "Low",
-      deadline: new Date().toISOString().slice(0, 10),
-      note: "Empty",
-    };
-    Api.createNote(body);
-    dispatch(addNote(body));
+    if (Api.offlineChecker()) {
+      const body = {
+        name: repo.name,
+        link: repo.svn_url,
+        priority: "Low",
+        deadline: new Date().toISOString().slice(0, 10),
+        note: "Empty",
+      };
+      Api.createNote(body);
+      dispatch(addNote(body));
+    }
   }
 
   return (

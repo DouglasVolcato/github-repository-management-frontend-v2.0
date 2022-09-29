@@ -21,11 +21,13 @@ export default function ExtraSecurity() {
 
   async function createSecuritKeys(event: any) {
     event.preventDefault();
-    const keysCreation = await Api.createSecuritKeys(user.email, keys);
-    if (keysCreation === true) {
-      const loggedUser = await Api.getLoggedUser();
-      dispatch(addUser(loggedUser));
-      setShowFormModal(false);
+    if (Api.offlineChecker()) {
+      const keysCreation = await Api.createSecuritKeys(user.email, keys);
+      if (keysCreation === true) {
+        const loggedUser = await Api.getLoggedUser();
+        dispatch(addUser(loggedUser));
+        setShowFormModal(false);
+      }
     }
   }
 

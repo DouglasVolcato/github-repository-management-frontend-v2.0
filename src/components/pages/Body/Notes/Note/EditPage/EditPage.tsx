@@ -14,10 +14,12 @@ export default function EditPage({ props }: any) {
 
   async function updateNote(event: any) {
     event.preventDefault();
-    setNewNote({ ...newNote });
-    Api.updateNote(props.data.name, newNote);
-    dispatch(editNote({ index: props.key, body: newNote }));
-    props.showEditModal();
+    if (Api.offlineChecker()) {
+      setNewNote({ ...newNote });
+      Api.updateNote(props.data.name, newNote);
+      dispatch(editNote({ index: props.key, body: newNote }));
+      props.showEditModal();
+    }
   }
 
   return (

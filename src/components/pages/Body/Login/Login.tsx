@@ -15,16 +15,18 @@ export default function Login() {
 
   async function login(event: any) {
     event.preventDefault();
-    const logUser = await Api.logUser(loginInfo);
+    if (Api.offlineChecker()) {
+      const logUser = await Api.logUser(loginInfo);
 
-    if (logUser === false) {
-      dispatch(addUser({ name: "", email: "", photo: "", password: "" }));
-      dispatch(addNotes([]));
-    } else {
-      const userNotes = await Api.getNotes();
-      const loggedUser = await Api.getLoggedUser();
-      dispatch(addUser(loggedUser));
-      dispatch(addNotes(userNotes));
+      if (logUser === false) {
+        dispatch(addUser({ name: "", email: "", photo: "", password: "" }));
+        dispatch(addNotes([]));
+      } else {
+        const userNotes = await Api.getNotes();
+        const loggedUser = await Api.getLoggedUser();
+        dispatch(addUser(loggedUser));
+        dispatch(addNotes(userNotes));
+      }
     }
   }
 

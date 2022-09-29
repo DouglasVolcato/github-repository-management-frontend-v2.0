@@ -17,8 +17,10 @@ export default function PasswordRecovery() {
 
   async function sendKeys(event: any) {
     event.preventDefault();
-    const sentKeys = await Api.sendKeys(userEmail, newPassword, keys);
-    setRecoveryModal(sentKeys);
+    if (Api.offlineChecker()) {
+      const sentKeys = await Api.sendKeys(userEmail, newPassword, keys);
+      setRecoveryModal(sentKeys);
+    }
   }
 
   return (

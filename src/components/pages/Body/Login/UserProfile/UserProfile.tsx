@@ -20,15 +20,19 @@ export default function UserProfile({ setShowUserModal }: SetUserModal) {
   });
 
   async function deleteUser() {
-    Api.deleteUser();
+    if (Api.offlineChecker()) {
+      Api.deleteUser();
+    }
   }
 
   async function editUser(event: any) {
     event.preventDefault();
-    const userEdition = await Api.editUser(editedUser);
-    if (userEdition === true) {
-      dispatch(addUser(editedUser));
-      setEditionPage(false);
+    if (Api.offlineChecker()) {
+      const userEdition = await Api.editUser(editedUser);
+      if (userEdition === true) {
+        dispatch(addUser(editedUser));
+        setEditionPage(false);
+      }
     }
   }
 

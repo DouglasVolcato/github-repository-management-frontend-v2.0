@@ -12,10 +12,10 @@ export const Api = {
     try {
       if (apiAnswer.message.includes("Wrong password.")) {
         alert("Wrong password.");
-        return false
+        return false;
       } else if (apiAnswer.message.includes("Email not found.")) {
         alert("Email not registered.");
-        return false
+        return false;
       }
     } catch (err) {
       alert("Successfully logged in!");
@@ -159,5 +159,13 @@ export const Api = {
       });
 
     return priorityHigh.concat(priorityMedium).concat(priorityLow);
+  },
+
+  offlineChecker: () => {
+    if (!window.navigator.onLine) {
+      alert("You are offline.");
+      return false;
+    }
+    return true;
   },
 };

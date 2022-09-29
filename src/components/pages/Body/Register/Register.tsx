@@ -12,15 +12,17 @@ export default function Register() {
 
   async function addNewUser(event: any) {
     event.preventDefault();
-    setRegisterUser({ ...registerUser });
-    const userCreation = await Api.createUser(registerUser);
-    if (userCreation === true) {
-      setRegisterUser({
-        name: "",
-        email: "",
-        password: "",
-        photo: "",
-      });
+    if (Api.offlineChecker()) {
+      setRegisterUser({ ...registerUser });
+      const userCreation = await Api.createUser(registerUser);
+      if (userCreation === true) {
+        setRegisterUser({
+          name: "",
+          email: "",
+          password: "",
+          photo: "",
+        });
+      }
     }
   }
 
