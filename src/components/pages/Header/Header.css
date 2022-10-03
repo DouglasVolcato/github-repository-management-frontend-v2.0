@@ -34,144 +34,40 @@
 
 @media(max-width: 1009px) {
     .Header {
-        display: flex;
-        justify-content: space-evenly;
-        background-color: green;
-        color: white;
-        padding: 5px;
-        position: fixed;
-        top: 0;
         font-size: 3.5vw;
     }
 
     .Header__navbar {
-        display: flex;
-        justify-content: space-evenly;
         width: 101.5vw;
-        background-color: green;
-    }
-
-    .Header__navbar div {
-        border-radius: 3%;
-        text-align: center;
-        width: fit-content;
-        cursor: pointer;
-        background-color: green;
-        border: solid 2px green;
-        font-weight: bold;
-    }
-
-    .Header__navbar div:hover {
-        border-color: yellow;
-        background-color: yellow;
-        color: blue;
     }
 }
 
 @media(max-width: 759px) {
     .Header {
-        display: flex;
-        justify-content: space-evenly;
-        background-color: green;
-        color: white;
-        padding: 5px;
-        position: fixed;
-        top: 0;
         font-size: 4vw;
     }
 
     .Header__navbar {
-        display: flex;
-        justify-content: space-evenly;
         width: 102vw;
-        background-color: green;
-    }
-
-    .Header__navbar div {
-        border-radius: 3%;
-        text-align: center;
-        width: fit-content;
-        cursor: pointer;
-        background-color: green;
-        border: solid 2px green;
-        font-weight: bold;
-    }
-
-    .Header__navbar div:hover {
-        border-color: yellow;
-        background-color: yellow;
-        color: blue;
     }
 }
 
 @media(max-width: 509px) {
     .Header {
-        display: flex;
-        justify-content: space-evenly;
-        background-color: green;
-        color: white;
-        padding: 5px;
-        position: fixed;
-        top: 0;
         font-size: 4.5vw;
     }
 
     .Header__navbar {
-        display: flex;
-        justify-content: space-evenly;
         width: 102.5vw;
-        background-color: green;
-    }
-
-    .Header__navbar div {
-        border-radius: 3%;
-        text-align: center;
-        width: fit-content;
-        cursor: pointer;
-        background-color: green;
-        border: solid 2px green;
-        font-weight: bold;
-    }
-
-    .Header__navbar div:hover {
-        border-color: yellow;
-        background-color: yellow;
-        color: blue;
     }
 }
 
 @media(max-width: 259px) {
     .Header {
-        display: flex;
-        justify-content: space-evenly;
-        background-color: green;
-        color: white;
-        padding: 5px;
-        position: fixed;
-        top: 0;
         font-size: 5vw;
     }
 
     .Header__navbar {
-        display: flex;
-        justify-content: space-evenly;
         width: 103vw;
-        background-color: green;
-    }
-
-    .Header__navbar div {
-        border-radius: 3%;
-        text-align: center;
-        width: fit-content;
-        cursor: pointer;
-        background-color: green;
-        border: solid 2px green;
-        font-weight: bold;
-    }
-
-    .Header__navbar div:hover {
-        border-color: yellow;
-        background-color: yellow;
-        color: blue;
     }
 }

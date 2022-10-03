@@ -51,229 +51,97 @@
 }
 
 @media(max-width: 1139px) {
-    .Register {
-        padding: 10px;
-        height: 100%;
-    }
 
     .Register__h1 {
-        width: fit-content;
         margin: 2vw auto 2vw auto;
         font-size: 3vw;
     }
 
-    .Register__form {
-        width: fit-content;
-        margin: auto;
-    }
-
     .Register__form--input {
         font-size: 1.8vw;
-        border-radius: 5%;
     }
 
     .Register__form--button {
         font-size: 2vw;
-        width: 100%;
-        background-color: rgb(216, 168, 45);
-        border: solid 0.2px rgb(0, 0, 0);
-        border-radius: 5%;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-    .Register__form--button:hover {
-        background-color: blue;
-        color: white;
     }
 }
 
 @media(max-width: 959px) {
-    .Register {
-        padding: 10px;
-        height: 100%;
-    }
 
     .Register__h1 {
-        width: fit-content;
         margin: 2.8vw auto 2.8vw auto;
         font-size: 3.8vw;
     }
 
-    .Register__form {
-        width: fit-content;
-        margin: auto;
-    }
-
     .Register__form--input {
         font-size: 2.6vw;
-        border-radius: 5%;
     }
 
     .Register__form--button {
         font-size: 2.8vw;
-        width: 100%;
-        background-color: rgb(216, 168, 45);
-        border: solid 0.2px rgb(0, 0, 0);
-        border-radius: 5%;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-    .Register__form--button:hover {
-        background-color: blue;
-        color: white;
     }
 }
 
 @media(max-width: 779px) {
-    .Register {
-        padding: 10px;
-        height: 100%;
-    }
 
     .Register__h1 {
-        width: fit-content;
         margin: 3.6vw auto 3.6vw auto;
         font-size: 4.6vw;
     }
 
-    .Register__form {
-        width: fit-content;
-        margin: auto;
-    }
-
     .Register__form--input {
         font-size: 3.4000000000000004vw;
-        border-radius: 5%;
     }
 
     .Register__form--button {
         font-size: 3.6vw;
-        width: 100%;
-        background-color: rgb(216, 168, 45);
-        border: solid 0.2px rgb(0, 0, 0);
-        border-radius: 5%;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-    .Register__form--button:hover {
-        background-color: blue;
-        color: white;
     }
 }
 
 @media(max-width: 599px) {
-    .Register {
-        padding: 10px;
-        height: 100%;
-    }
 
     .Register__h1 {
-        width: fit-content;
         margin: 4.4vw auto 4.4vw auto;
         font-size: 5.4vw;
     }
 
-    .Register__form {
-        width: fit-content;
-        margin: auto;
-    }
-
     .Register__form--input {
         font-size: 4.2vw;
-        border-radius: 5%;
     }
 
     .Register__form--button {
         font-size: 4.4vw;
-        width: 100%;
-        background-color: rgb(216, 168, 45);
-        border: solid 0.2px rgb(0, 0, 0);
-        border-radius: 5%;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-    .Register__form--button:hover {
-        background-color: blue;
-        color: white;
     }
 }
 
 @media(max-width: 419px) {
-    .Register {
-        padding: 10px;
-        height: 100%;
-    }
 
     .Register__h1 {
-        width: fit-content;
         margin: 5.2vw auto 5.2vw auto;
         font-size: 6.2vw;
     }
 
-    .Register__form {
-        width: fit-content;
-        margin: auto;
-    }
-
     .Register__form--input {
         font-size: 5vw;
-        border-radius: 5%;
     }
 
     .Register__form--button {
         font-size: 5.2vw;
-        width: 100%;
-        background-color: rgb(216, 168, 45);
-        border: solid 0.2px rgb(0, 0, 0);
-        border-radius: 5%;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-    .Register__form--button:hover {
-        background-color: blue;
-        color: white;
     }
 }
 
 @media(max-width: 239px) {
-    .Register {
-        padding: 10px;
-        height: 100%;
-    }
 
     .Register__h1 {
-        width: fit-content;
         margin: 6vw auto 6vw auto;
         font-size: 7vw;
     }
 
-    .Register__form {
-        width: fit-content;
-        margin: auto;
-    }
-
     .Register__form--input {
         font-size: 5.8vw;
-        border-radius: 5%;
     }
 
     .Register__form--button {
         font-size: 6vw;
-        width: 100%;
-        background-color: rgb(216, 168, 45);
-        border: solid 0.2px rgb(0, 0, 0);
-        border-radius: 5%;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-    .Register__form--button:hover {
-        background-color: blue;
-        color: white;
     }
 }

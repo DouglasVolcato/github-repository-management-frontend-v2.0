@@ -37,18 +37,11 @@
     }
 
     .LoggedUser__logged {
-        border: solid 2px green;
         font-size: 1.3vw;
-        height: 100%;
-        width: 100%;
-        color: green;
-        padding: 3px;
-        cursor: pointer;
     }
 
     .LoggedUser__notLogged {
         font-size: 1.3vw;
-        color: rgb(0, 140, 255);
     }
 }
 
@@ -58,18 +51,11 @@
     }
 
     .LoggedUser__logged {
-        border: solid 2px green;
         font-size: 2.1vw;
-        height: 100%;
-        width: 100%;
-        color: green;
-        padding: 3px;
-        cursor: pointer;
     }
 
     .LoggedUser__notLogged {
         font-size: 2.1vw;
-        color: rgb(0, 140, 255);
     }
 }
 
@@ -79,18 +65,11 @@
     }
 
     .LoggedUser__logged {
-        border: solid 2px green;
         font-size: 2.9000000000000004vw;
-        height: 100%;
-        width: 100%;
-        color: green;
-        padding: 3px;
-        cursor: pointer;
     }
 
     .LoggedUser__notLogged {
         font-size: 2.9000000000000004vw;
-        color: rgb(0, 140, 255);
     }
 }
 
@@ -100,18 +79,11 @@
     }
 
     .LoggedUser__logged {
-        border: solid 2px green;
         font-size: 3.7vw;
-        height: 100%;
-        width: 100%;
-        color: green;
-        padding: 3px;
-        cursor: pointer;
     }
 
     .LoggedUser__notLogged {
         font-size: 3.7vw;
-        color: rgb(0, 140, 255);
     }
 }
 
@@ -121,17 +93,10 @@
     }
 
     .LoggedUser__logged {
-        border: solid 2px green;
         font-size: 4.5vw;
-        height: 100%;
-        width: 100%;
-        color: green;
-        padding: 3px;
-        cursor: pointer;
     }
 
     .LoggedUser__notLogged {
         font-size: 4.5vw;
-        color: rgb(0, 140, 255);
     }
 }
